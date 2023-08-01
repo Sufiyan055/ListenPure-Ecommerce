@@ -104,7 +104,7 @@ let productData = [
   },
   {
     id: "eryijmm",
-    itemname: "Boat handphone",
+    itemname: "Boat headphone",
     price: 256,
     img: "./Images/nb2.avif",
     previ: "p-11",
