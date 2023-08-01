@@ -45,7 +45,7 @@ let generateCartProducts = () => {
     shoppingCart.innerHTML = ``;
     label.innerHTML = `
         <p class="emptyLine">Cart is Empty</p>
-        <a class="backprobtn" href="product.html">
+        <a class="backprobtn" href="index.html">
         <button>Back to Product</button>
         </a>
         `;

@@ -216,13 +216,12 @@
 }
 .mainimg .product-img {
   width: 100%;
-  height: 100%;
+  height: auto;
   background: rgb(232, 223, 210);
   -o-object-fit: cover;
      object-fit: cover;
-  height: auto;
-  margin-bottom: 0.5rem;
   text-align: center;
+  margin-bottom: 0.5rem;
   border-radius: 8px;
 }
 
@@ -339,6 +338,11 @@
   border: 1px solid #000;
   font-family: sans-serif;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.text-center .backprobtn button:hover {
+  background-color: rgb(255, 115, 0);
+  color: #fff;
 }
 .text-center .checkout {
   margin-top: 5px;
@@ -460,6 +464,12 @@
 }
 .footerSection .socialLinks a h1 {
   color: rgb(255, 115, 0);
+}
+.footerSection .socialLinks .indexh1 {
+  font-size: 1.7rem;
+}
+.footerSection .socialLinks .indexh1 h1 {
+  font-size: 3rem;
 }
 .footerSection .socialLinks ul {
   display: flex;

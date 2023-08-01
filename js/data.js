@@ -104,7 +104,7 @@ let productData = [
   },
   {
     id: "eryijmm",
-    itemname: "Neck band",
+    itemname: "Boat handphone",
     price: 256,
     img: "../Images/nb2.avif",
     previ: "p-11",
@@ -114,7 +114,7 @@ let productData = [
   },
   {
     id: "kjcnd",
-    itemname: "Neck band",
+    itemname: "Boat true wireless",
     price: 266,
     img: "../Images/nb3.avif",
     previ: "p-12",
@@ -134,7 +134,7 @@ let productData = [
   },
   {
     id: "jhcbskj",
-    itemname: "Boalt earphone",
+    itemname: "Boult earphone",
     price: 266,
     img: "../Images/earphone/baoltear6.webp",
     previ: "p-13",
