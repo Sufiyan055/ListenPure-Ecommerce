@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>ListenPure - Products</title>
+  </head>
+  <body>
+    <!-- Home.html === Product.html -->
+    <!-- Navbar starts -->
+    <div class="mainNav" id="mainNav">
+      <nav>
+        <a href="product.html" class="abarh1">
+          <h1><img src="Images/boat3.webp" /> <b>ListenPure.</b>Com</h1>
+        </a>
+        <form class="searchForm" role="search" id="searchForm">
+          <input
+            id="searchTxt"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <i class="bx bx-search searchicon"></i>
+        </form>
+        <a href="#product-box-kxlkmklm" class="searchOpencls">
+          <i class="bx bx-search" onclick="searchOpen()"></i>
+        </a>
+        <span
+          class="menuToggle"
+          onclick="menuToggle()"
+          id="menuToggleid"
+        ></span>
+        <ul>
+          <li><a href="product.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="cartaddli">
+            <a class="addCartbtn" href="cart.html"
+              ><i class="bx bx-cart-add"></i>
+              <span id="cartPlus">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!--  -->
+
+    <!-- Slideshow section starts -->
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner" id="carousel-item">
+        <div class="carousel-item active">
+          <img
+            src="Images/slideshow1-small.webp"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="Images/slideshow2-small.webp"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="Images/slideshow3-small.webp"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Section for catgories product -->
+    <div class="productCategories">
+      <a href="#product-box-jhcbskj">
+        <div class="Image">
+          <img src="Images/wireearphone.webp" alt="" />
+          <span>Earphone</span>
+        </div>
+      </a>
+      <a href="#product-box-kjbnhvfda">
+        <div class="Image">
+          <img src="Images/slideshow2-small.webp" alt="" />
+          <span>Headphone</span>
+        </div>
+      </a>
+      <a href="#product-box-sjhaznamlkamlm">
+        <div class="Image">
+          <img src="Images/slideshow3-small.webp" alt="" />
+          <span>True wireless</span>
+        </div>
+      </a>
+      <a href="#product-box-kjnknklmlklss">
+        <div class="Image">
+          <img src="Images/slideshow1-small.webp" alt="" />
+          <span>Speaker</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- All Products mix starts -->
+
+    <section class="Mixproduct" id="Mixproduct"></section>
+
+    <!--  -->
+
+    <!--  -->
+
+        <!-- footer -->
+
+        <div class="gototop"><a href="#carouselExampleIndicators"><i class='bx bx-up-arrow-circle' ></i>Go to Top</a></div>
+        <footer class="footerSection">
+          <div class="socialLinks">
+            <a href="product.html"
+              ><h1>ListenPure.</h1>
+              com</a
+            >
+            <ul>
+              <li><i class="bx bxl-instagram"></i></li>
+              <li><i class="bx bxl-facebook"></i></li>
+              <li><i class="bx bxl-twitter"></i></li>
+              <li><i class="bx bxl-youtube"></i></li>
+              <li><i class="bx bxl-linkedin"></i></li>
+            </ul>
+            <p>All Rights reserved | &copy;2023</p>
+          </div>
+          <ul class="productLink">
+            <p>Products</p>
+            <li><a href="#product-box-jhcbskj">earphone</a></li>
+            <li><a href="#product-box-kjbnhvfda">headphone</a></li>
+            <li><a href="#product-box-kjnjhghnkmjkkj">neckband</a></li>
+            <li>
+              <a href="#product-box-sjhaznamlkamlm">true wireless</a>
+            </li>
+            <li><a href="#product-box-kjnknklmlklss">speakers</a></li>
+            <li>
+              <a href="#product-box-kjbaztyol">gaming headphones</a>
+            </li>
+          </ul>
+        </footer>
+  </body>
+  <!-- js link -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <!-- bootatrap js link -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
+</html>

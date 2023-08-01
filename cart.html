@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <title>ListenPure - Cart</title>
+  </head>
+  <body>
+    <!-- Home.html === Product.html -->
+    <!-- Navbar starts -->
+    <div class="mainNav" id="mainNav">
+      <nav>
+        <a href="product.html" class="abarh1">
+          <h1><img src="Images/boat3.webp" /> <b>Product.</b>Com</h1>
+        </a>
+        <span
+          class="menuToggle"
+          onclick="menuToggle()"
+          id="menuToggleid"
+        ></span>
+        <ul>
+          <li><a href="product.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="cartaddli">
+            <a class="addCartbtn" href="cart.html"
+              ><i class="bx bx-cart-add"></i>
+              <span id="cartPlus">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!--  -->
+    <!-- Added products in cart -->
+    <div id="label" class="text-center"></div>
+
+    <div class="shopping-cart" id="shopping-cart"></div>
+    <!--  -->
+  </body>
+  <!-- js link -->
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script>
+    let mainNav = document.getElementById("mainNav");
+    let menuToggleid = document.getElementById("menuToggleid");
+    /* open and close navbar */
+    function menuToggle() {
+      menuToggleid.classList.toggle("active");
+      mainNav.classList.toggle("activeNav");
+    }
+  </script>
+</html>
