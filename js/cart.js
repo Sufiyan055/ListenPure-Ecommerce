@@ -68,7 +68,7 @@ let increment = (id) => {
       id: selectedItem.id,
       item: 1,
     });
-  } else if (search.item === 50) {
+  } else if (search.item === 20) {
     alert("Out of stock");
   } else {
     search.item += 1;

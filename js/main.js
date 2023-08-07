@@ -1,6 +1,9 @@
 let Mixproduct = document.getElementById("Mixproduct");
 let mainNav = document.getElementById("mainNav");
 let menuToggleid = document.getElementById("menuToggleid");
+let spacialOffers = document.querySelector(".spacialOffers");
+let closeOffer = document.querySelector(".closeOffer");
+let barndclick = document.querySelector(".barndclick");
 
 /* The value store in basket when click on add cat */
 let basket = JSON.parse(localStorage.getItem("data")) || [];
@@ -10,6 +13,22 @@ function menuToggle() {
   menuToggleid.classList.toggle("active");
   mainNav.classList.toggle("activeNav");
 }
+
+/* Offer */
+spacialOffers.style.display = "none";
+
+setTimeout(() => {
+  spacialOffers.style.display = "block";
+  spacialOffers.style.transition = "0.5s ease-in-out";
+}, 5000);
+
+closeOffer.onclick = () => {
+  spacialOffers.style.display = "none";
+};
+
+barndclick.onclick = () => {
+  spacialOffers.style.display = "none";
+};
 
 /* genearting products from taking data from productData array*/
 let generateProduct = () => {
@@ -99,4 +118,3 @@ function searchOpen() {
     searchForm.style.border = "none";
   }
 }
-
