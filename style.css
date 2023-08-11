@@ -532,7 +532,7 @@
 }
 
 /* Offer */
-.spacialOffers {
+.specialOffers {
   position: fixed;
   background: rgba(0, 0, 0, 0.4862745098);
   width: 100%;
@@ -544,7 +544,7 @@
   transition: 0.5s ease-in-out;
   display: none;
 }
-.spacialOffers .closeOffer {
+.specialOffers .closeOffer {
   position: absolute;
   font-size: 2.5rem;
   right: 70px;
@@ -555,16 +555,16 @@
   border: 1px solid;
   border-radius: 50%;
 }
-.spacialOffers .closeOffer:hover {
+.specialOffers .closeOffer:hover {
   color: red;
 }
-.spacialOffers .bgOffer {
+.specialOffers .bgOffer {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
-.spacialOffers .bgOffer .Offer {
+.specialOffers .bgOffer .Offer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -574,30 +574,63 @@
   border-radius: 20px;
   gap: 25px;
 }
-.spacialOffers .bgOffer .Offer .earT {
+.specialOffers .bgOffer .Offer .earT {
   width: 200px;
   overflow: hidden;
   text-align: center;
 }
-.spacialOffers .bgOffer .Offer .earT span a {
+.specialOffers .bgOffer .Offer .earT span a {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: #ff9812;
   -webkit-text-decoration: underline 0.2rem;
           text-decoration: underline 0.2rem;
 }
-.spacialOffers .bgOffer .Offer .earT img {
+.specialOffers .bgOffer .Offer .earT img {
   width: 100%;
 }
-.spacialOffers .bgOffer .Offer .Model {
+.specialOffers .bgOffer .Offer .Model {
   width: 450px;
   overflow: hidden;
   border-radius: 15px;
 }
-.spacialOffers .bgOffer .Offer .Model img {
+.specialOffers .bgOffer .Offer .Model img {
   width: 100%;
 }
 
 /* Media query started */
+@media screen and (max-width: 1032px) {
+  .specialOffers .bgOffer .Offer {
+    padding: 10px;
+  }
+  .specialOffers .bgOffer .Offer .earT {
+    width: 150px;
+  }
+  .specialOffers .bgOffer .Offer .earT span a {
+    font-size: 0.7rem;
+  }
+  .specialOffers .bgOffer .Offer .Model {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 695px) {
+  .specialOffers .closeOffer {
+    top: 80px;
+    right: 5px;
+  }
+  .specialOffers .bgOffer .Offer {
+    padding: 10px;
+    flex-direction: column-reverse;
+  }
+  .specialOffers .bgOffer .Offer .earT {
+    width: 110px;
+  }
+  .specialOffers .bgOffer .Offer .earT span a {
+    font-size: 0.7rem;
+  }
+  .specialOffers .bgOffer .Offer .Model {
+    width: 230px;
+  }
+}
 @media screen and (max-width: 530px) {
   .mainNav {
     overflow: hidden;
@@ -620,6 +653,7 @@
     margin-top: 10px;
     display: flex;
     flex-direction: column;
+    padding-left: 0px;
   }
   .mainNav nav ul .cartaddli {
     position: absolute;

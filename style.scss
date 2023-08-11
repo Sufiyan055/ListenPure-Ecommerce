@@ -535,7 +535,7 @@ $bgImgPro: rgb(232, 223, 210);
 }
 
 /* Offer */
-.spacialOffers {
+.specialOffers {
   position: fixed;
   background: #0000007c;
   width: 100%;
@@ -561,14 +561,10 @@ $bgImgPro: rgb(232, 223, 210);
     }
   }
   .bgOffer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexmenu();
     height: 100%;
     .Offer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexmenu();
       background: #fff;
       border: 1px solid;
       padding: 55px;
@@ -604,6 +600,53 @@ $bgImgPro: rgb(232, 223, 210);
 
 /* Media query started */
 
+@media screen and (max-width: 1032px) {
+  .specialOffers {
+    .bgOffer {
+      .Offer {
+        padding: 10px;
+        .earT {
+          width: 150px;
+          span {
+            a {
+              font-size: 0.7rem;
+            }
+          }
+        }
+        .Model {
+          width: 280px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 695px) {
+  .specialOffers {
+    .closeOffer {
+      top: 80px;
+      right: 5px;
+    }
+    .bgOffer {
+      .Offer {
+        padding: 10px;
+        flex-direction: column-reverse;
+        .earT {
+          width: 110px;
+          span {
+            a {
+              font-size: 0.7rem;
+            }
+          }
+        }
+        .Model {
+          width: 230px;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 530px) {
   .mainNav {
     overflow: hidden;
@@ -624,6 +667,7 @@ $bgImgPro: rgb(232, 223, 210);
         margin-top: 10px;
         display: flex;
         flex-direction: column;
+        padding-left: 0px;
         .cartaddli {
           position: absolute;
           top: 5px;

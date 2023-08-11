@@ -1,7 +1,7 @@
 let Mixproduct = document.getElementById("Mixproduct");
 let mainNav = document.getElementById("mainNav");
 let menuToggleid = document.getElementById("menuToggleid");
-let spacialOffers = document.querySelector(".spacialOffers");
+let specialOffers = document.querySelector(".specialOffers");
 let closeOffer = document.querySelector(".closeOffer");
 let barndclick = document.querySelector(".barndclick");
 
@@ -15,19 +15,23 @@ function menuToggle() {
 }
 
 /* Offer */
-spacialOffers.style.display = "none";
+specialOffers.style.display = "none";
 
 setTimeout(() => {
-  spacialOffers.style.display = "block";
-  spacialOffers.style.transition = "0.5s ease-in-out";
+  specialOffers.style.display = "block";
+  specialOffers.style.transition = "0.5s ease-in-out";
 }, 5000);
 
 closeOffer.onclick = () => {
-  spacialOffers.style.display = "none";
+  specialOffers.style.display = "none";
 };
 
 barndclick.onclick = () => {
-  spacialOffers.style.display = "none";
+  specialOffers.style.display = "none";
+};
+
+specialOffers.onclick = () => {
+  specialOffers.style.display = "none";
 };
 
 /* genearting products from taking data from productData array*/
